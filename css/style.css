@@ -1021,7 +1021,7 @@ section {
 }
 
 .footer-links ul li a:hover {
-	color: var(--primary-color);
+	color: #3498db;
 	padding-left: 5px;
 }
 
