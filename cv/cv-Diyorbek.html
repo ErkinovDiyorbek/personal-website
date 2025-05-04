@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diyorbek - CV</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* Sizning CSS kodingiz shu yerda */
+    /* ⬇️ Shu yerga siz yuborgan CSS ni qo‘yaman ⬇️ */
+    :root {
+      --primary: #2c3e50;
+      --secondary: #34495e;
+      --accent: #3498db;
+      --text: #333;
+      --light-gray: #f5f5f5;
+    }
+
+    @page {
+      size: A4;
+      margin: 1.5cm;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.5;
+      color: var(--text);
+      background: white;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+    }
+
+    .cv-container {
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      color: var(--primary);
+      margin: 10px 0 5px;
+      font-size: 24px;
+    }
+
+    .title {
+      color: var(--accent);
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-item i {
+      margin-right: 8px;
+      color: var(--accent);
+    }
+
+    section {
+      margin-bottom: 20px;
+      page-break-inside: avoid;
+    }
+
+    section h2 {
+      color: var(--primary);
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .project {
+      margin-bottom: 15px;
+    }
+
+    .project h3 {
+      color: var(--secondary);
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: var(--light-gray);
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+
+    .two-column {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .column {
+      width: 48%;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 12px;
+      color: #777;
+    }
+
+    @media print {
+      body {
+        font-size: 12pt;
+      }
+
+      .cv-container {
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cv-container">
+
+    <header>
+      <h1>Diyorbek Erkinov</h1>
+      <div class="title">Web Dasturchi</div>
+      <div class="contact-info">
+        <div class="contact-item"><i class="fas fa-envelope"></i> erkinovdiyor2410@gmail.com</div>
+        <div class="contact-item"><i class="fas fa-phone"></i> +998 99 747 29 10</div>
+        <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Jizzax, O'zbekiston</div>
+      </div>
+    </header>
+
+    <section>
+      <h2><i class="fas fa-bullseye"></i> Professional Maqsad</h2>
+      <p>Full stack developer sifatida yuqori sifatli web ilovalar ishlab chiqish. Yangi texnologiyalarni o'rganish
+        va jamoa bilan samarali ishlashga tayyorman.</p>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-briefcase"></i> Ish Tajribasi</h2>
+      <div class="project">
+        <h3>To'yxona Loyihasi (2023)</h3>
+        <ul>
+          <li>Login/Register tizimi</li>
+          <li>Zakazlar boshqaruvi</li>
+          <li>Admin panel</li>
+        </ul>
+      </div>
+      <div class="project">
+        <h3>Choyxona Loyihasi (2022)</h3>
+        <ul>
+          <li>Interaktiv menyu</li>
+          <li>3 tilga tarjima</li>
+          <li>Mobil optimallashtirish</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-code"></i> Texnik Ko'nikmalar</h2>
+      <div class="skills-container">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Express.js </div>
+        <div class="skill">PostgreSQL</div>
+        <div class="skill">Git</div>
+        <div class="skill">GitHub</div>
+      </div>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-language"></i> Tillar</h2>
+      <ul>
+        <li>O'zbek - ona tili</li>
+        <li>Rus - o'rta daraja</li>
+        <li>Ingliz - o'rta daraja</li>
+      </ul>
+    </section>
+
+  </div>
+</body>
+
+</html>

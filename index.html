@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Portfolio | Isming</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Floating particles -->
+	<div class="particles" id="particles"></div>
+
+	<!-- Navbar -->
+	<header class="navbar">
+		<div class="container">
+			<a href="#" class="logo">Portfolio</a>
+			<nav class="nav-links">
+				<ul>
+					<li><a href="#home" class="nav-link active">Bosh sahifa</a></li>
+					<li><a href="#about" class="nav-link">Men haqimda</a></li>
+					<li><a href="#projects" class="nav-link">Loyihalar</a></li>
+					<li><a href="#contact" class="nav-link">Bog'lanish</a></li>
+				</ul>
+			</nav>
+			<div class="nav-actions">
+				<button id="toggleTheme" class="theme-btn">🌙</button>
+				<button class="menu-toggle" id="menuToggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<!-- Hero -->
+	<section class="hero" id="home">
+		<div class="container">
+			<div class="hero-content">
+				<h1 class="hero-title">
+					<span class="greeting">Salom,</span>
+					<span class="name">Men <span class="highlight">Diyorbek</span>man</span>
+					<span class="profession">Web Dasturchi</span>
+				</h1>
+				<p class="hero-text">HTML, CSS, JavaScript, Node.js va PostgreSQL bilan ishlayman.</p>
+				<div class="hero-actions">
+					<a href="cv/Diyorbek - CV.pdf" class="btn primary" download>
+						<i class="fas fa-download"></i> CV-ni yuklab olish
+					</a>
+					<a href="#contact" class="btn secondary">
+						<i class="fas fa-paper-plane"></i> Bog'lanish
+					</a>
+				</div>
+			</div>
+			<div class="hero-image">
+				<div class="image-wrapper">
+					<img src="images/Diyorbek.jpg" alt="Profile Image" class="profile-img">
+					<div class="tech-icons">
+						<div class="icon" style="--i:1"><i class="fab fa-html5"></i></div>
+						<div class="icon" style="--i:2"><i class="fab fa-css3-alt"></i></div>
+						<div class="icon" style="--i:3"><i class="fab fa-js"></i></div>
+						<div class="icon" style="--i:4"><i class="fab fa-node-js"></i></div>
+						<div class="icon" style="--i:5"><i class="fas fa-database"></i></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Me -->
+	<section class="about section" id="about">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Men haqimda</h2>
+				<p class="section-subtitle">O'zim va qobiliyatim haqida</p>
+			</div>
+
+			<div class="about-content">
+				<div class="about-image">
+					<div class="image-container">
+						<img src="images/Diyorbek.jpg" alt="About Me" class="about-img">
+						<div class="experience-badge">
+							<span class="years">1+</span>
+							<span class="text">Yillik tajriba</span>
+						</div>
+					</div>
+				</div>
+				<div class="about-text">
+					<h3>Professional Web Dasturchi</h3>
+					<p>Men mustaqil web dasturchiman. Frontend va backend bilan ishlayman. 1 yildan ortiq tajribaga egaman va
+						turli xil loyihalarda ishlaganman. Har bir loyihada yangi texnologiyalarni o'rganishga harakat qilaman.</p>
+
+					<div class="skills">
+						<h4>Texnologiyalar:</h4>
+						<div class="skill-bars">
+							<div class="skill-bar">
+								<div class="skill-info">
+									<span>HTML/CSS</span>
+									<span>95%</span>
+								</div>
+								<div class="progress-bar">
+									<div class="progress" style="width: 95%"></div>
+								</div>
+							</div>
+							<div class="skill-bar">
+								<div class="skill-info">
+									<span>JavaScript</span>
+									<span>85%</span>
+								</div>
+								<div class="progress-bar">
+									<div class="progress" style="width: 85%"></div>
+								</div>
+							</div>
+							<div class="skill-bar">
+								<div class="skill-info">
+									<span>Node.js</span>
+									<span>80%</span>
+								</div>
+								<div class="progress-bar">
+									<div class="progress" style="width: 80%"></div>
+								</div>
+							</div>
+							<div class="skill-bar">
+								<div class="skill-info">
+									<span>PostgreSQL</span>
+									<span>75%</span>
+								</div>
+								<div class="progress-bar">
+									<div class="progress" style="width: 75%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="about-actions">
+						<a href="#projects" class="btn primary">
+							<i class="fas fa-briefcase"></i> Loyihalarim
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projects section -->
+	<section class="projects section" id="projects">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Mening loyihalarim</h2>
+				<p class="section-subtitle">Yakunlangan ishlarim</p>
+			</div>
+
+			<div class="projects-filter">
+				<button class="filter-btn active" data-filter="all">Hammasi</button>
+				<button class="filter-btn" data-filter="frontend">Frontend</button>
+				<button class="filter-btn" data-filter="backend">Backend</button>
+				<button class="filter-btn" data-filter="fullstack">Fullstack</button>
+			</div>
+
+			<div class="projects-grid">
+				<div class="project-card" data-category="fullstack">
+					<div class="project-image">
+						<img src="images/project1.jpg" alt="To'yxona zakaz tizimi">
+						<div class="project-links">
+							<a href="#" class="link-btn"><i class="fas fa-eye"></i></a>
+							<a href="https://github.com/sizningGithub/tuyxona" target="_blank" class="link-btn"><i
+									class="fab fa-github"></i></a>
+						</div>
+					</div>
+					<div class="project-content">
+						<h3>To'yxona zakaz tizimi</h3>
+						<p>Node.js, PostgreSQL, JWT, Cookie, HTML/CSS/JS</p>
+						<div class="project-tags">
+							<span>Node.js</span>
+							<span>PostgreSQL</span>
+							<span>Fullstack</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="project-card" data-category="frontend">
+					<div class="project-image">
+						<img src="images/project2.jpg" alt="Choyxona menu ilovasi">
+						<div class="project-links">
+							<a href="#" class="link-btn"><i class="fas fa-eye"></i></a>
+							<a href="https://github.com/sizningGithub/choyxona" target="_blank" class="link-btn"><i
+									class="fab fa-github"></i></a>
+						</div>
+					</div>
+					<div class="project-content">
+						<h3>Choyxona menu ilovasi</h3>
+						<p>JavaScript, statik menyu, hover effektlar, modal oynalar</p>
+						<div class="project-tags">
+							<span>JavaScript</span>
+							<span>CSS3</span>
+							<span>Frontend</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Add more projects here -->
+				<div class="project-card" data-category="backend">
+					<div class="project-image">
+						<img src="images/project3.jpg" alt="REST API">
+						<div class="project-links">
+							<a href="#" class="link-btn"><i class="fas fa-eye"></i></a>
+							<a href="#" target="_blank" class="link-btn"><i class="fab fa-github"></i></a>
+						</div>
+					</div>
+					<div class="project-content">
+						<h3>REST API loyihasi</h3>
+						<p>Node.js, Express, MongoDB, JWT autentifikatsiya</p>
+						<div class="project-tags">
+							<span>Node.js</span>
+							<span>Express</span>
+							<span>Backend</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="projects-more">
+				<a href="#" class="btn outline">
+					<i class="fas fa-plus"></i> Barcha loyihalar
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Testimonials -->
+	<section class="testimonials section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Mijozlar fikrlari</h2>
+				<p class="section-subtitle">Mening mijozlarim nima deyishadi</p>
+			</div>
+
+			<div class="swiper testimonials-slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="testimonial-card">
+							<div class="client-info">
+								<img src="images/client1.png" alt="Client">
+								<div class="client-details">
+									<h4>Ali Valiyev</h4>
+									<span>Choyxona egasi</span>
+								</div>
+							</div>
+							<p class="testimonial-text">
+								"Diyorbek juda yaxshi ish qildi. Choyxona uchun yaratgan menyu ilovasi mijozlarimga juda yoqdi. Ishni
+								vaqtida tugatdi va qo'llab-quvvatlash ham ajoyib."
+							</p>
+							<div class="rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="testimonial-card">
+							<div class="client-info">
+								<img src="images/client2.jpg" alt="Client">
+								<div class="client-details">
+									<h4>Dilfuza Rahimova</h4>
+									<span>Tadbir tashkilotchisi</span>
+								</div>
+							</div>
+							<p class="testimonial-text">
+								"To'yxona zakaz tizimi aynan biz xohlagandek bo'ldi. Oson foydalanish va chiroyli interfeys. Diyorbek
+								loyihani tushunish va talablarimizni qondirishda juda mohir."
+							</p>
+							<div class="rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+						</div>
+					</div>
+
+					<!-- Add more testimonials -->
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section class="contact section" id="contact">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Menga murojaat qiling</h2>
+				<p class="section-subtitle">Har qanday savol yoki taklif uchun</p>
+			</div>
+
+			<div class="contact-content">
+				<div class="contact-info">
+					<div class="info-card">
+						<div class="info-icon">
+							<i class="fas fa-envelope"></i>
+						</div>
+						<div class="info-content">
+							<h4>Email</h4>
+							<a href="mailto:erkinovdiyor2410@gamil.com">erkinovdiyor2410@gamil.com</a>
+						</div>
+					</div>
+
+					<div class="info-card">
+						<div class="info-icon">
+							<i class="fas fa-phone-alt"></i>
+						</div>
+						<div class="info-content">
+							<h4>Telefon</h4>
+							<a href="tel:+998997472910">+998 99 747 29 10</a>
+						</div>
+					</div>
+
+					<div class="info-card">
+						<div class="info-icon">
+							<i class="fab fa-telegram"></i>
+						</div>
+						<div class="info-content">
+							<h4>Telegram</h4>
+							<a href="https://t.me/Diyorbek_24_10_2003" target="_blank">t.me/Diyorbek_24_10_2003</a>
+						</div>
+					</div>
+
+					<div class="info-card">
+						<div class="info-icon">
+							<i class="fab fa-github"></i>
+						</div>
+						<div class="info-content">
+							<h4>GitHub</h4>
+							<a href="https://github.com/ErkinovDiyorbek" target="_blank">github.com/ErkinovDiyorbek</a>
+						</div>
+					</div>
+				</div>
+
+				<form id="telegramForm" class="contact-form">
+					<div class="form-group">
+						<input type="text" name="name" placeholder="Ismingiz" required class="form-control">
+						<i class="fas fa-user"></i>
+					</div>
+					<div class="form-group">
+						<input type="email" name="email" placeholder="Email manzilingiz" required class="form-control">
+						<i class="fas fa-envelope"></i>
+					</div>
+					<div class="form-group">
+						<input type="text" name="subject" placeholder="Mavzu" required class="form-control">
+						<i class="fas fa-tag"></i>
+					</div>
+					<div class="form-group">
+						<textarea name="message" placeholder="Xabaringiz..." rows="5" required class="form-control"></textarea>
+						<i class="fas fa-comment"></i>
+					</div>
+					<button type="submit" class="btn primary form-submit">
+						<i class="fas fa-paper-plane"></i> Xabarni yuborish
+					</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-about">
+					<a href="#" class="footer-logo">Portfolio</a>
+					<p>Professional web dasturchi. Frontend va backend texnologiyalari bilan ishlayman.</p>
+					<div class="footer-social">
+						<a href="https://t.me/Diyor_Erkinov1" target="_blank"><i class="fab fa-telegram"></i></a>
+						<a href="https://www.instagram.com/diyorbek_24_10_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+							target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href="github.com/ErkinovDiyorbek" target="_blank"><i class="fab fa-github"></i></a>
+						<a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+					</div>
+				</div>
+
+				<div class="footer-links">
+					<h4>Foydali havolalar</h4>
+					<ul>
+						<li><a href="#home">Bosh sahifa</a></li>
+						<li><a href="#about">Men haqimda</a></li>
+						<li><a href="#projects">Loyihalar</a></li>
+						<li><a href="#contact">Bog'lanish</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-newsletter">
+					<h4>Yangiliklar</h4>
+					<p>Yangi loyihalar va yangiliklardan xabardor bo'lish uchun obuna bo'ling.</p>
+					<form class="newsletter-form">
+						<input type="email" placeholder="Email manzilingiz" required>
+						<button type="submit"><i class="fas fa-paper-plane"></i></button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<p> 2025 Diyorbek. Barcha huquqlar himoyalangan.</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Back to top button -->
+	<a href="#home" class="back-to-top" id="backToTop">
+		<i class="fas fa-arrow-up"></i>
+	</a>
+
+	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
